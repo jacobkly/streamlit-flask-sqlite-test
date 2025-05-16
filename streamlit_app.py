@@ -12,7 +12,7 @@ if st.button("Add Name"):
         if res.ok:
             st.success("Name successfully added!")
         else:
-            st.error("Filed to add name.")
+            st.error("Failed to add name.")
 
 st.header("All names in DB")
 res = requests.get("http://localhost:5000/users")
